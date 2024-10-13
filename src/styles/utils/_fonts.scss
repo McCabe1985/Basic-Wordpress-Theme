@@ -1,0 +1,27 @@
+/*@font-face {
+    font-family: 'Anton';
+    src: local('Anton'), url("../fonts/AquilineTwo.ttf") format('truetype');
+}*/
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light.ttf"),
+    url("./fonts/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "NexaRustSans-Black";
+  src: local("NexaRustSans-Black.ttf"),
+    url("./fonts/NexaRustSans-Black.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "norwester";
+  src: local("norwester.woff2"), url("./fonts/norwester.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "aileron";
+  src: local("abys.thin.woff2"),
+    url("./fonts/aileron.thin.woff2") format("woff2");
+  font-display: swap;
+}

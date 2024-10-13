@@ -1,0 +1,25 @@
+@use "../utils/" as *;
+
+.coffee-entry-container {
+  @include flexContainer(row);
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 2rem 0;
+  @include md {
+    margin: 4rem 0;
+  }
+  .coffee-entry-img-container {
+    max-width: 16rem;
+    @include md {
+      max-width: 45%;
+    }
+  }
+  .coffee-entry-origin-container {
+    max-width: 45ch;
+    @include md {
+      max-width: 45%;
+    }
+  }
+}

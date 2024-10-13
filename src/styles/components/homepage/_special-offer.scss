@@ -1,0 +1,38 @@
+@use "../../utils/" as *;
+
+.offer-section-container {
+  @include flexContainer(row);
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: $accent-color;
+  color: #333;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  .offer-section-img-container {
+    max-height: 20rem;
+    overflow: hidden;
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  .offer-section-text-container {
+    max-width: 45ch;
+    margin: 1rem;
+    @include md {
+      margin: 2rem;
+    }
+    h2 {
+      font-family: $heading-font;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    .offer-section-link {
+      padding: 0.5em 1em;
+      background-color: $brand-color;
+      border-radius: 10px;
+    }
+  }
+}

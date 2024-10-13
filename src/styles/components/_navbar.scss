@@ -1,0 +1,43 @@
+@use "../utils/" as *;
+
+.nav-container {
+  @include flexContainer(row);
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  .navbar-logo-container {
+    height: 100%;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .desktop-navlinks-container {
+    display: none;
+    list-style: none;
+    @include lg {
+      @include flexContainer(row);
+      justify-content: space-between;
+      width: 50%;
+    }
+    ul {
+      width: 100%;
+      @include flexContainer(row);
+      justify-content: space-around;
+    }
+  }
+
+  .mobile-navbar-toggle {
+    @include md {
+      display: none;
+    }
+  }
+}
